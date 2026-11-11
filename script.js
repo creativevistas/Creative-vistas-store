@@ -1,9 +1,9 @@
 const products=[
-{id:'realtor-social',name:'Realtor Social Media Starter Kit',price:29,category:'realtor',image:'assets/product-realtor-social.webp',description:'An elevated starting point for a polished real estate social presence. Editable template collection planned for Canva.'},
-{id:'open-house',name:'Open House Marketing Bundle',price:19,category:'realtor',image:'assets/product-open-house.webp',description:'Refined marketing pieces for showcasing your next open house. Product deliverables will be finalized before launch.'},
-{id:'planner',name:'Small Business Content Planner',price:24,category:'business',image:'assets/product-planner.webp',description:'A thoughtfully organized planning resource for entrepreneurs creating consistent, purposeful content.'},
-{id:'instagram',name:'Realtor Instagram Template Pack',price:39,category:'marketing',image:'assets/product-instagram.webp',description:'Sophisticated editable social media layouts for real estate marketing and brand consistency.'},
-{id:'canva-course',name:'Canva Marketing Mini-Course',price:79,category:'courses',image:'assets/product-canva.webp',description:'Guided marketing and Canva education designed to elevate your content and creative confidence.'}
+{id:'realtor-social',name:'Realtor Social Media Starter Kit',price:29,category:'realtor',image:'product-realtor-social.webp',description:'An elevated starting point for a polished real estate social presence. Editable template collection planned for Canva.'},
+{id:'open-house',name:'Open House Marketing Bundle',price:19,category:'realtor',image:'product-open-house.webp',description:'Refined marketing pieces for showcasing your next open house. Product deliverables will be finalized before launch.'},
+{id:'planner',name:'Small Business Content Planner',price:24,category:'business',image:'product-planner.webp',description:'A thoughtfully organized planning resource for entrepreneurs creating consistent, purposeful content.'},
+{id:'instagram',name:'Realtor Instagram Template Pack',price:39,category:'marketing',image:'product-instagram.webp',description:'Sophisticated editable social media layouts for real estate marketing and brand consistency.'},
+{id:'canva-course',name:'Canva Marketing Mini-Course',price:79,category:'courses',image:'product-canva.webp',description:'Guided marketing and Canva education designed to elevate your content and creative confidence.'}
 ];
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];const fmt=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);
 const state={filter:'all',cart:{}};try{state.cart=JSON.parse(localStorage.getItem('creativeVistasPreviewCart')||'{}')||{}}catch{};let lastFocus=null;let toastTimer;
