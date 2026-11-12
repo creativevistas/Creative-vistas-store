@@ -872,3 +872,51 @@ small,.brand-small,.footer-brand small,.category-title small,
 @media (prefers-reduced-motion:reduce) {
  .cv-video-hero .cv-hero-video{animation:none !important;}
 }
+
+/* 2026-11-12: Preserve intrinsic 1500x500 (3:1) video framing on every screen.
+   No forced crop, stretch, duplicate copy or added empty hero area. */
+section.hero.cv-video-hero {
+ display:block !important;
+ position:relative !important;
+ width:100% !important;
+ max-width:100% !important;
+ height:auto !important;
+ min-height:0 !important;
+ aspect-ratio:auto !important;
+ padding:0 !important;
+ margin:0 !important;
+ overflow:hidden !important;
+ background:#171615 !important;
+ line-height:0 !important;
+}
+section.hero.cv-video-hero video.cv-hero-video {
+ position:relative !important;
+ inset:auto !important;
+ display:block !important;
+ width:100% !important;
+ max-width:100% !important;
+ height:auto !important;
+ aspect-ratio:3 / 1 !important;
+ object-fit:contain !important;
+ object-position:center center !important;
+ margin:0 !important;
+ padding:0 !important;
+ border:0 !important;
+}
+section.hero.cv-video-hero .cv-mobile-hero-copy {display:none !important}
+@media(max-width:850px) {
+ section.hero.cv-video-hero {
+   display:block !important;
+   aspect-ratio:auto !important;
+   min-height:0 !important;
+   height:auto !important;
+   padding:0 !important;
+   overflow:hidden !important;
+ }
+ section.hero.cv-video-hero video.cv-hero-video {
+   position:relative !important;
+   width:100% !important;
+   height:auto !important;
+   aspect-ratio:3 / 1 !important;
+ }
+}
