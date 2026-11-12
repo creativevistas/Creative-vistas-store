@@ -142,3 +142,7 @@ body .cv-about-editorial .cv-founder-expertise span:last-child{border-right:0}
  body .cv-about-editorial .cv-founder-button{font-size:17px!important;width:100%}
  body .cv-about-editorial .cv-founder-expertise span{border:0;font-size:18px!important}
 }
+
+/* Softer frame for the green founder portrait. */
+body .cv-about-editorial .cv-founder-image-frame{background:#e9e3db!important;box-shadow:10px 12px 0 #eee8e1!important;border:5px solid #eee8e1!important;box-sizing:border-box!important}
+body .cv-about-editorial .cv-founder-image-frame img{object-position:center 32%!important}
