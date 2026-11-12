@@ -553,3 +553,6 @@ body {font-size:18px !important;}
 .product-card a.add-button{display:block;text-align:center}
 .product-card a.product-image-button{display:block}
 @media(max-width:760px){.cv-package-layout{grid-template-columns:1fr;gap:25px}.cv-package-page{padding:25px 16px 65px}.cv-package-info h1{font-size:49px}.cv-package-intro,.cv-package-note,.cv-package-subnote,.cv-package-info ul{font-size:17px}}
+
+/* Preserve full photographic package cover without clipping text; card dimensions remain unchanged. */
+.product-image-button img[src*="8441a1b6-3bae-4784-a59b-45ec07534594"]{object-fit:contain;background:#f3eeea}
