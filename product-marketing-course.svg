@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-label="Marketing Mini-Course digital tools and strategy laptop mockup">
+<defs><linearGradient id="back" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ede3d8"/><stop offset=".55" stop-color="#f8f4ee"/><stop offset="1" stop-color="#ded0c0"/></linearGradient><linearGradient id="desk" x1="0" y1="0" x2="1"><stop stop-color="#d0bca9"/><stop offset=".5" stop-color="#f2e7db"/><stop offset="1" stop-color="#c3ab94"/></linearGradient><linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dcdad7"/><stop offset=".7" stop-color="#918b86"/><stop offset="1" stop-color="#cfc9c3"/></linearGradient><linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#151515"/><stop offset="1" stop-color="#2a2725"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="22"/></filter><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12"/></filter></defs>
+<rect width="1440" height="960" fill="url(#back)"/>
+<path d="M0 0h290c130 200-80 330-150 530L0 570Z" fill="#b6b398" opacity=".15"/><path d="M0 0h310c-105 75-110 160-185 245" fill="none" stroke="#6c725d" stroke-width="19" opacity=".4" filter="url(#soft)"/>
+<ellipse cx="1240" cy="290" rx="195" ry="290" fill="#fff" opacity=".35" filter="url(#shadow)"/>
+<path d="M0 747h1440v213H0Z" fill="url(#desk)"/><path d="M0 750h1440" stroke="#a89481" stroke-opacity=".34" stroke-width="4"/>
+<ellipse cx="722" cy="800" rx="635" ry="69" fill="#322c28" opacity=".27" filter="url(#shadow)"/>
+<rect x="162" y="128" width="1120" height="649" rx="32" fill="#171616" stroke="#524e4b" stroke-width="11"/>
+<rect x="197" y="166" width="1050" height="576" rx="8" fill="url(#screen)"/>
+<circle cx="723" cy="146" r="6" fill="#525252"/>
+<text x="722" y="246" fill="#d5c3ad" font-family="Georgia,serif" font-size="29" text-anchor="middle" letter-spacing="9">CREATIVE VISTAS</text>
+<path d="M520 274h405" stroke="#ad9580" stroke-width="2" opacity=".8"/>
+<text x="722" y="366" fill="#fffdf9" font-family="Georgia,serif" font-size="95" text-anchor="middle" letter-spacing="1">MARKETING</text>
+<text x="722" y="469" fill="#fffdf9" font-family="Georgia,serif" font-size="93" text-anchor="middle" letter-spacing="1">MINI-COURSE</text>
+<text x="722" y="530" fill="#dfd1c3" font-family="Arial,sans-serif" font-size="30" text-anchor="middle" letter-spacing="9">DIGITAL TOOLS &amp; STRATEGY</text>
+<g font-family="Arial,sans-serif" font-size="27" font-weight="bold" text-anchor="middle">
+<rect x="277" y="570" width="164" height="72" rx="13" fill="#159ca5"/><text x="359" y="614" fill="#fff">Canva</text>
+<rect x="458" y="570" width="164" height="72" rx="13" fill="#383632" stroke="#8d8881"/><text x="540" y="614" fill="#fff">ChatGPT</text>
+<rect x="639" y="570" width="164" height="72" rx="13" fill="#984a8f"/><text x="721" y="614" fill="#fff">Instagram</text>
+<rect x="820" y="570" width="164" height="72" rx="13" fill="#29292b" stroke="#68686b"/><text x="902" y="614" fill="#fff">TikTok</text>
+<rect x="1001" y="570" width="164" height="72" rx="13" fill="#2668c6"/><text x="1083" y="614" fill="#fff">Facebook</text>
+</g>
+<text x="722" y="700" fill="#f4ece4" font-family="Arial,sans-serif" font-size="28" letter-spacing="2.2" text-anchor="middle">CONTENT  •  SOCIAL MEDIA  •  BRANDING  •  AUTOMATION</text>
+<path d="M111 777h1223l-65 35H176Z" fill="url(#metal)" stroke="#9e9791" stroke-width="4"/><path d="M185 813h1085c-28 17-95 21-131 21H308c-40 0-90-5-123-21Z" fill="#b8afa7"/>
+<path d="M607 777h229l30 16H583Z" fill="#9f9893" opacity=".9"/>
+<g opacity=".7"><rect x="50" y="803" width="230" height="18" rx="8" fill="#e7ded5"/><ellipse cx="133" cy="866" rx="88" ry="13" fill="#867563" opacity=".25"/><path d="M87 798l23-95 20 12-8 83" fill="#ebe4dd"/><path d="M106 712c32-21 52-18 71 8" fill="none" stroke="#66755e" stroke-width="10" stroke-linecap="round"/></g>
+</svg>
