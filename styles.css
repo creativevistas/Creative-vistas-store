@@ -399,3 +399,15 @@ body{font-size:18px}
  .filter{padding:11px 12px !important}
  .hero-subhead{font-size:23px !important}
 }
+
+/* Shop simplification: hide category filter controls and count; stack packages on phones. */
+.products .shop-tools{display:none !important}
+@media(max-width:600px){
+  .products .product-grid{grid-template-columns:minmax(0,1fr) !important;gap:24px}
+  .products .product-card{width:100%;min-width:0}
+  .products .product-image-button{aspect-ratio:1.35}
+  .products .product-info{padding:20px 18px 22px}
+  .products .product-info h3{font-size:clamp(29px,7.3vw,38px)}
+  .products .product-price{font-size:24px}
+  .products .add-button{font-size:18px !important;padding:15px 12px}
+}
