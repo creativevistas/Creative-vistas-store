@@ -1,8 +1,8 @@
 const products=[
 {id:'realtor-social',name:'Realtor Social Media Starter Kit',price:29,category:'realtor',image:'product-realtor-social.webp',description:'An elevated starting point for a polished real estate social presence. Editable template collection planned for Canva.'},
 {id:'open-house',name:'Open House Marketing Bundle',price:19,category:'realtor',image:'product-open-house.webp',description:'Refined marketing pieces for showcasing your next open house. Product deliverables will be finalized before launch.'},
-{id:'planner',name:'Small Business Content Planner',price:24,category:'business',image:'product-planner.webp',description:'A thoughtfully organized planning resource for entrepreneurs creating consistent, purposeful content.'},
-{id:'instagram',name:'Realtor Instagram Template Pack',price:39,category:'marketing',image:'product-instagram.webp',description:'Sophisticated editable social media layouts for real estate marketing and brand consistency.'},
+{id:'planner',name:'Content Planner',price:24,category:'business',image:'product-planner.webp',description:'A thoughtfully organized planning resource for entrepreneurs creating consistent, purposeful content.'},
+{id:'instagram',name:'Social Media Template Pack',price:39,category:'marketing',image:'product-instagram.webp',description:'Sophisticated editable social media layouts for real estate marketing and brand consistency.'},
 {id:'canva-course',name:'Marketing Mini-Course',price:79,category:'courses',image:'product-canva.webp',description:'Learn practical digital marketing with Canva design and branding, ChatGPT for content ideas and strategy, Instagram, TikTok and Facebook marketing, and essential digital tools for planning, creating and growing your brand. Course materials and lesson details are being finalized.'}
 ];
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];const fmt=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);
