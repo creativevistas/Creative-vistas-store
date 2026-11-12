@@ -103,3 +103,62 @@
  .cv-content-extra-price{font-size:64px}
  .cv-content-closing{padding:35px 0 0}
 }
+
+/* Larger typography for the three digital-product detail pages.
+   Kept separate from The Content Experience's custom styling. */
+body .cv-package-page:not(.cv-content-experience) .cv-package-back{
+ display:inline-block!important;
+ font:500 23px/1.4 'DM Sans',sans-serif!important;
+ margin-bottom:28px!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info .kicker{
+ font:600 23px/1.4 'DM Sans',sans-serif!important;
+ letter-spacing:1.4px!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info h1{
+ font:500 clamp(53px,5vw,78px)/1.06 'Cormorant Garamond',Georgia,serif!important;
+ margin:13px 0 16px!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info .cv-package-price{
+ font:700 clamp(33px,2.6vw,41px)/1.2 'DM Sans',sans-serif!important;
+ margin:0 0 21px!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info .cv-package-intro{
+ font:400 clamp(23px,1.7vw,27px)/1.5 'DM Sans',sans-serif!important;
+ margin:0 0 27px!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info h2{
+ font:500 clamp(42px,3.3vw,54px)/1.1 'Cormorant Garamond',Georgia,serif!important;
+ margin:25px 0 17px!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info ul{
+ font:400 clamp(23px,1.55vw,26px)/1.5 'DM Sans',sans-serif!important;
+ padding-left:30px!important;
+ margin:0 0 26px!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info li{
+ font-size:inherit!important;
+ line-height:inherit!important;
+ margin-bottom:10px!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info .cv-package-note{
+ font:400 clamp(22px,1.6vw,25px)/1.5 'DM Sans',sans-serif!important;
+ margin:22px 0!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info .cv-package-cta{
+ font:700 22px/1.25 'DM Sans',sans-serif!important;
+ min-height:68px!important;
+ padding:18px 28px!important;
+ white-space:normal!important;
+ text-align:center!important;
+}
+body .cv-package-page:not(.cv-content-experience) .cv-package-info .cv-package-subnote{
+ font:400 clamp(21px,1.5vw,24px)/1.5 'DM Sans',sans-serif!important;
+ margin-top:19px!important;
+}
+@media(max-width:600px){
+ body .cv-package-page:not(.cv-content-experience) .cv-package-info .kicker{font-size:20px!important}
+ body .cv-package-page:not(.cv-content-experience) .cv-package-info .cv-package-intro,
+ body .cv-package-page:not(.cv-content-experience) .cv-package-info ul{font-size:22px!important}
+ body .cv-package-page:not(.cv-content-experience) .cv-package-info .cv-package-cta{font-size:20px!important}
+}
