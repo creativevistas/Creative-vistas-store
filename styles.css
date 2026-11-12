@@ -1182,3 +1182,61 @@ section.hero.cv-video-hero .cv-mobile-overlay-copy{display:none !important}
  section.hero.cv-video-hero .cv-mobile-overlay-copy h1{font-size:clamp(44px,11.5vw,56px) !important}
  section.hero.cv-video-hero .cv-mobile-overlay-copy p{font-size:21px !important}
 }
+
+/* 2026-11-12 — Single original-video hero, with centered responsive crop.
+   The video itself contains all the title text; never duplicate it in HTML. */
+section.hero.cv-video-hero{
+  display:block !important;
+  position:relative !important;
+  isolation:isolate !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:2494 / 830 !important;
+  margin:0 !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  background:#171615 !important;
+  line-height:0 !important;
+}
+section.hero.cv-video-hero video.cv-hero-video{
+  display:block !important;
+  position:absolute !important;
+  inset:0 !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  object-fit:cover !important;
+  object-position:50% 50% !important;
+  transform:none !important;
+  filter:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+}
+section.hero.cv-video-hero::after{content:none !important;display:none !important}
+section.hero.cv-video-hero .cv-mobile-overlay-copy,
+section.hero.cv-video-hero .cv-mobile-hero-copy{display:none !important}
+@media (max-width:850px) and (orientation:portrait){
+ section.hero.cv-video-hero{
+  aspect-ratio:1.15 / 1 !important;
+  height:auto !important;
+  min-height:0 !important;
+  overflow:hidden !important;
+ }
+}
+@media (min-width:851px) and (max-width:1100px) and (orientation:portrait){
+ section.hero.cv-video-hero{aspect-ratio:1.65 / 1 !important;height:auto !important}
+}
+@media (max-width:1100px) and (orientation:landscape){
+ section.hero.cv-video-hero{
+  aspect-ratio:2.15 / 1 !important;
+  height:auto !important;
+  min-height:0 !important;
+ }
+}
