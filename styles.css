@@ -1029,3 +1029,156 @@ section.hero.cv-video-hero .cv-mobile-hero-copy {display:none !important}
  section.hero.cv-video-hero .cv-mobile-overlay-copy h1{font-size:clamp(46px,11vw,58px) !important}
  section.hero.cv-video-hero .cv-mobile-overlay-copy p{font-size:22px !important}
 }
+
+/* CV RESPONSIVE HERO v3: center-cropped motion, portrait + landscape */
+html,body{max-width:100%;overflow-x:clip}
+section.hero.cv-video-hero {max-width:100% !important;overflow:hidden !important}
+section.hero.cv-video-hero .cv-mobile-overlay-copy{display:none !important}
+/* Phone and tablet portrait: cinematic moving video, focal point centered, HTML copy fits view. */
+@media (max-width:1100px) and (orientation:portrait) {
+ section.hero.cv-video-hero{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  width:100% !important;
+  height:clamp(480px,117vw,690px) !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  padding:0 !important;
+  margin:0 !important;
+  position:relative !important;
+  overflow:hidden !important;
+  isolation:isolate !important;
+ }
+ section.hero.cv-video-hero video.cv-hero-video{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  display:block !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  filter:brightness(.63) blur(3px) !important;
+  transform:scale(1.02);
+  pointer-events:none !important;
+  z-index:0 !important;
+ }
+ section.hero.cv-video-hero:after{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+  background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.28)) !important;
+ }
+ section.hero.cv-video-hero .cv-mobile-overlay-copy{
+  position:relative !important;
+  z-index:2 !important;
+  width:100% !important;
+  min-width:0 !important;
+  height:100% !important;
+  display:flex !important;
+  padding:30px clamp(18px,4vw,44px) !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-direction:column !important;
+  text-align:center !important;
+  color:#fff !important;
+  line-height:1.2 !important;
+ }
+ section.hero.cv-video-hero .cv-mobile-overlay-copy h1{
+  font:400 clamp(45px,10vw,80px)/.98 var(--serif) !important;
+  letter-spacing:-.5px !important;
+  margin:0 0 20px !important;
+  text-align:center !important;
+  white-space:normal !important;
+  max-width:100% !important;
+ }
+ section.hero.cv-video-hero .cv-mobile-overlay-copy p{
+  font:italic 500 clamp(21px,3vw,28px)/1.28 var(--serif) !important;
+  max-width:620px !important;
+  text-align:center !important;
+  margin:0 0 25px !important;
+ }
+ section.hero.cv-video-hero .cv-mobile-overlay-copy .btn{
+  font-size:18px !important;
+  min-height:52px !important;
+ }
+}
+/* A phone rotated to landscape must not inherit the portrait 520px-plus hero. */
+@media (orientation:landscape) and (max-height:650px) and (max-width:1180px) {
+ section.hero.cv-video-hero{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  position:relative !important;
+  width:100% !important;
+  height:clamp(280px,75svh,450px) !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  isolation:isolate !important;
+ }
+ section.hero.cv-video-hero video.cv-hero-video{
+  position:absolute !important;
+  inset:0 !important;
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  min-height:0 !important;
+  aspect-ratio:auto !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  filter:brightness(.66) blur(3px) !important;
+  transform:scale(1.02) !important;
+  z-index:0 !important;
+ }
+ section.hero.cv-video-hero:after{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  pointer-events:none !important;
+  z-index:1 !important;
+  background:rgba(0,0,0,.14) !important;
+ }
+ section.hero.cv-video-hero .cv-mobile-overlay-copy{
+  position:relative !important;
+  z-index:2 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:100% !important;
+  height:100% !important;
+  min-width:0 !important;
+  padding:15px 24px !important;
+  text-align:center !important;
+  color:#fff !important;
+  line-height:1.15 !important;
+ }
+ section.hero.cv-video-hero .cv-mobile-overlay-copy h1{
+  font:400 clamp(34px,5.1vw,56px)/.96 var(--serif) !important;
+  white-space:normal !important;
+  margin:0 0 8px !important;
+ }
+ section.hero.cv-video-hero .cv-mobile-overlay-copy p{
+  font:italic 500 clamp(16px,2vw,22px)/1.2 var(--serif) !important;
+  margin:0 0 12px !important;
+  max-width:740px !important;
+ }
+ section.hero.cv-video-hero .cv-mobile-overlay-copy .btn{
+  font-size:16px !important;
+  min-height:40px !important;
+  padding:8px 20px !important;
+ }
+}
+/* Tall phones avoid cropping the video to the left. */
+@media (max-width:420px) and (orientation:portrait){
+ section.hero.cv-video-hero{height:clamp(490px,120vw,570px) !important}
+ section.hero.cv-video-hero video.cv-hero-video{object-position:50% 50% !important}
+ section.hero.cv-video-hero .cv-mobile-overlay-copy h1{font-size:clamp(44px,11.5vw,56px) !important}
+ section.hero.cv-video-hero .cv-mobile-overlay-copy p{font-size:21px !important}
+}
