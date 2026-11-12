@@ -433,3 +433,7 @@ body{font-size:18px}
   color: #111;
   border-color: #f5f1ed;
 }
+
+/* Uniform package-image frames across all screen sizes. */
+.products .product-image-button{display:block;width:100%;height:auto;aspect-ratio:4 / 3 !important;overflow:hidden;flex-shrink:0}
+.products .product-image-button img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
