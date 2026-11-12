@@ -556,3 +556,66 @@ body {font-size:18px !important;}
 
 /* Preserve full photographic package cover without clipping text; card dimensions remain unchanged. */
 .product-image-button img[src*="8441a1b6-3bae-4784-a59b-45ec07534594"]{object-fit:contain;background:#f3eeea}
+
+/* 2026-11-12: Restore readable sizing and consistently fitting package covers. */
+/* Approved Content Experience cover is 16:9. Keep ALL package cards the same ratio. */
+.products .product-image-button,
+.products .product-card .product-image-button{
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:16/9 !important;
+  overflow:hidden !important;
+}
+.products .product-image-button img,
+.products .product-card .product-image-button img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+.cv-package-image img{
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:16/9 !important;
+  object-fit:contain !important;
+}
+/* Never reduce any deliberately small site typography below 14px. */
+html {font-size:16px}
+body {font-size:18px !important}
+small,.brand-small,.footer-brand small,.category-title small,
+.benefit span,.trust-row strong,.trust-row small,.product-total,
+.cart-count,.store-note,.search-result small,.dialog-product-content small,
+.drawer-foot p,.cart-line span,.filter,.add-button,
+.kicker,.eyebrow,.training-list li,.social-footer p,
+.interior-links a,.cv-package-subnote,.content-experience-tag {
+  font-size: max(14px, 1em) !important;
+}
+@media(max-width:600px){
+  body{font-size:17px !important}
+  small,.brand-small,.footer-brand small,.category-title small,
+  .benefit span,.trust-row strong,.trust-row small,.product-total,
+  .cart-count,.store-note,.search-result small,.dialog-product-content small,
+  .drawer-foot p,.cart-line span,.filter,.add-button,
+  .kicker,.eyebrow,.training-list li,.social-footer p,
+  .interior-links a,.cv-package-subnote,.content-experience-tag{
+    font-size:16px !important;
+  }
+}
+/* Undo old header rules that capped the Creative Vistas logo at 162–188px. */
+@media(min-width:1361px){
+ .header-inner{grid-template-columns:250px minmax(0,1fr) 98px !important;min-height:108px !important}
+ .site-header .brand,.site-header .brand-logo{width:100% !important;max-width:250px !important}
+}
+@media(min-width:1021px) and (max-width:1360px){
+ .header-inner{grid-template-columns:230px minmax(0,1fr) auto !important}
+ .site-header .brand,.site-header .brand-logo{width:100% !important;max-width:230px !important}
+}
+@media(max-width:1020px){
+ .header-inner{min-height:85px !important}
+ .site-header .brand{flex:0 1 220px !important;max-width:220px !important}
+ .site-header .brand-logo{width:100% !important;max-width:220px !important;height:auto}
+}
+@media(max-width:410px){
+ .site-header .brand{flex:0 1 205px !important;max-width:205px !important}
+ .site-header .brand-logo{max-width:205px !important}
+}
