@@ -1,0 +1,97 @@
+/* Creative Vistas header: dedicated, last-loaded stylesheet.
+   This deliberately overrides the old conflicting 2026 CSS without changing the hero or shop layout. */
+.site-header .header-inner {
+ display:flex !important; align-items:center !important; justify-content:space-between !important;
+ gap:20px !important; width:100% !important; max-width:100% !important;
+ min-height:120px !important; padding:10px clamp(22px,2.8vw,58px) !important;
+ margin:0 !important;
+}
+.site-header .brand {
+ flex:0 0 320px !important; width:320px !important; max-width:320px !important;
+ min-width:0 !important; display:flex !important; align-items:center !important; justify-content:flex-start !important;
+ overflow:visible !important;
+}
+.site-header .brand img.brand-logo {
+ width:320px !important; max-width:320px !important; height:auto !important;
+ object-fit:contain !important; display:block !important;
+}
+.site-header .primary-nav{
+ display:flex !important; position:static !important; min-width:0 !important; width:auto !important;
+ max-width:none !important; margin:0 0 0 auto !important; padding:0 !important;
+ justify-content:flex-end !important; align-items:center !important; flex-direction:row !important;
+ flex-wrap:nowrap !important; gap:12px !important; background:transparent !important;
+ box-shadow:none !important; border:0 !important;
+}
+.site-header .primary-nav a,
+.site-header .primary-nav a.active{
+ font-family:'Caveat',cursive !important; font-size:30px !important; font-weight:700 !important;
+ line-height:1.12 !important; letter-spacing:0 !important; white-space:nowrap !important;
+ padding:10px 17px !important; min-height:55px !important; min-width:0 !important;
+ border:1px solid rgba(255,255,255,.58) !important; border-radius:2px !important;
+ display:inline-flex !important; justify-content:center !important; align-items:center !important;
+ background:transparent !important; color:white !important; box-sizing:border-box !important;
+}
+.site-header .primary-nav a:hover,
+.site-header .primary-nav a:focus-visible,
+.site-header .primary-nav a.active:hover {
+ background:#fff !important; color:#111 !important; border-color:#fff !important;
+}
+.site-header .header-actions{
+ display:flex !important; align-items:center !important; justify-content:flex-end !important;
+ flex:0 0 auto !important; gap:12px !important; margin-left:6px !important;
+}
+.site-header .header-actions .icon-button {
+ display:inline-grid !important; place-items:center !important;
+ width:48px !important; height:48px !important; min-width:48px !important; min-height:48px !important;
+}
+.site-header .header-actions .icon-button svg {width:29px !important;height:29px !important}
+.site-header .cart-count{font-size:15px !important}
+.site-header .menu-button{display:none !important}
+@media (max-width:1560px) and (min-width:1181px){
+ .site-header .header-inner{min-height:112px !important;gap:12px !important;padding-inline:22px !important}
+ .site-header .brand{flex-basis:260px !important;max-width:260px !important;width:260px !important}
+ .site-header .brand img.brand-logo{width:260px !important;max-width:260px !important}
+ .site-header .primary-nav{gap:8px !important}
+ .site-header .primary-nav a,.site-header .primary-nav a.active{font-size:27px !important;padding:10px 12px !important}
+ .site-header .header-actions{gap:6px !important;margin-left:0 !important}
+}
+@media (max-width:1180px){
+ .site-header .header-inner{
+  display:flex !important;min-height:92px !important;
+  justify-content:space-between !important;padding:10px 20px !important;
+ }
+ .site-header .brand{flex:0 1 250px !important;width:250px !important;max-width:250px !important}
+ .site-header .brand img.brand-logo{width:100% !important;max-width:250px !important}
+ .site-header .primary-nav{display:none !important;position:absolute !important;top:100% !important;
+  left:0 !important;right:0 !important;width:100% !important;max-width:100% !important;
+  margin:0 !important;padding:22px !important;flex-direction:column !important;
+  align-items:stretch !important;gap:10px !important;background:#0c0c0c !important;
+  box-shadow:0 18px 25px #0008 !important;}
+ .site-header .primary-nav.open{display:flex !important}
+ .site-header .primary-nav a,.site-header .primary-nav a.active{
+  font-size:32px !important;min-height:58px !important;justify-content:flex-start !important;
+  padding:11px 18px !important;
+ }
+ .site-header .menu-button{display:inline-grid !important}
+}
+@media(max-width:600px){
+ .site-header .header-inner{min-height:94px !important;padding:9px 15px !important;gap:6px !important}
+ .site-header .brand{flex:0 1 205px !important;width:auto !important;max-width:205px !important}
+ .site-header .brand img.brand-logo{max-width:205px !important}
+ .site-header .header-actions{gap:3px !important;margin-left:0 !important}
+ .site-header .header-actions .icon-button{
+  min-width:39px !important;width:39px !important;min-height:42px !important;height:42px !important;
+ }
+ .site-header .header-actions .icon-button svg{width:24px !important;height:24px !important}
+}
+/* Consistent readable small labels; headings and card titles retain their larger typography. */
+body .kicker,body .eyebrow,body .store-note,body .products-heading .kicker,
+body .social-footer p,body .training-copy .kicker,body .product-total,
+body .cv-package-info .kicker,body .cv-package-subnote,body .training-list li{
+ font-size:18px !important;line-height:1.35 !important;
+}
+@media(max-width:600px){
+ body .kicker,body .eyebrow,body .store-note,body .products-heading .kicker,
+ body .social-footer p,body .training-copy .kicker,body .product-total,
+ body .cv-package-info .kicker,body .cv-package-subnote{font-size:16px !important}
+}
