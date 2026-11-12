@@ -95,3 +95,6 @@ body .cv-package-info .kicker,body .cv-package-subnote,body .training-list li{
  body .social-footer p,body .training-copy .kicker,body .product-total,
  body .cv-package-info .kicker,body .cv-package-subnote{font-size:16px !important}
 }
+
+/* Shop section eyebrow: requested readable 18px label. */
+body .products .products-heading .kicker { font-size:18px !important; line-height:1.35 !important; }
