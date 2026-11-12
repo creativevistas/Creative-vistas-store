@@ -920,3 +920,37 @@ section.hero.cv-video-hero .cv-mobile-hero-copy {display:none !important}
    aspect-ratio:3 / 1 !important;
  }
 }
+
+/* Training photo replacement: compact, responsive muted looping video. */
+.training .training-video {
+ position:relative !important;
+ display:block !important;
+ min-width:0 !important;
+ min-height:0 !important;
+ height:100% !important;
+ overflow:hidden !important;
+ background:#e9e2dc !important;
+ background-image:none !important;
+}
+.training .training-video video{
+ display:block !important;
+ width:100% !important;
+ height:100% !important;
+ min-height:240px !important;
+ max-height:410px !important;
+ aspect-ratio:2032 / 1118 !important;
+ object-fit:cover !important;
+ object-position:center center !important;
+ border:0 !important;
+}
+@media (max-width:850px) {
+ .training .training-video{height:auto !important}
+ .training .training-video video{
+   width:100% !important;
+   height:auto !important;
+   min-height:0 !important;
+   max-height:270px !important;
+   aspect-ratio:2032 / 1118 !important;
+   object-fit:cover !important;
+ }
+}
