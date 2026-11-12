@@ -1,30 +1,94 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#141313"><meta name="description" content="The Content Experience by Creative Vistas: authentic smartphone content creation. 30 minutes $80, 1 hour $150, longer sessions by quote. Photos and videos AirDropped after your session."><title>The Content Experience | Creative Vistas</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=readable-cover-logo-20261112c"><link rel="stylesheet" href="header-layout.css?v=package-nav-20261112"><link rel="stylesheet" href="shop-pages.css?v=content-experience-pricing-20261112"><style>
-/* Content Experience compact areas — local rules deliberately override legacy CSS. */
-.cv-content-experience .cv-compact-sessions,
-.cv-content-experience .cv-simple-process{margin-top:36px!important;padding:24px 0!important}
-.cv-content-experience .cv-compact-sessions h2,
-.cv-content-experience .cv-simple-process h2{font-family:'Cormorant Garamond',Georgia,serif!important;font-weight:500!important;font-size:clamp(32px,3vw,44px)!important;line-height:1.1!important;margin:0 0 16px!important;text-transform:none!important}
-.cv-content-experience .cv-session-rows{display:flex!important;flex-direction:column!important;gap:0!important}
-.cv-content-experience .cv-session-row{display:grid!important;grid-template-columns:minmax(110px,1fr) minmax(120px,.8fr) minmax(180px,1.7fr) auto!important;align-items:center!important;gap:16px!important;min-height:76px!important;padding:11px 0!important;border-bottom:1px solid #d8d0ca!important;background:transparent!important}
-.cv-content-experience .cv-session-row strong{font:700 20px/1.35 'DM Sans',sans-serif!important}
-.cv-content-experience .cv-session-row .cv-session-price{font:600 24px/1.25 'DM Sans',sans-serif!important}
-.cv-content-experience .cv-session-row .cv-session-description{font:400 17px/1.35 'DM Sans',sans-serif!important}
-.cv-content-experience .cv-session-row .btn{font:700 16px/1.25 'DM Sans',sans-serif!important;letter-spacing:.3px!important;min-height:45px!important;min-width:155px!important;padding:12px 15px!important;margin:0!important;text-align:center!important;white-space:nowrap!important}
-.cv-content-experience .cv-session-note{font:400 16px/1.5 'DM Sans',sans-serif!important;margin:16px 0 0!important}
-.cv-content-experience .cv-simple-process{background:transparent!important;border-top:0!important;border-bottom:0!important}
-.cv-content-experience .cv-simple-process ol{list-style:decimal!important;list-style-position:outside!important;margin:0 0 0 24px!important;padding:0!important}
-.cv-content-experience .cv-simple-process li{display:list-item!important;font:400 17px/1.5 'DM Sans',sans-serif!important;margin:0 0 8px!important;padding:0 0 0 3px!important}
-.cv-content-experience .cv-simple-process li strong{font-weight:700!important}
-@media(max-width:900px){
- .cv-content-experience .cv-session-row{grid-template-columns:1fr auto!important;gap:6px 15px!important}
- .cv-content-experience .cv-session-row .cv-session-description{grid-column:1!important;grid-row:2!important}
- .cv-content-experience .cv-session-row .btn{grid-column:2!important;grid-row:1 / 3!important}
+/* Readable large type on the entire Content Experience page.
+   Explicit local overrides win over legacy 80KB global stylesheet. */
+body .cv-content-experience{font-family:'DM Sans',sans-serif!important}
+body .cv-content-experience .cv-package-back{
+ font-size:23px!important;line-height:1.4!important;display:inline-block!important;margin-bottom:25px!important;
+}
+body .cv-content-experience .cv-package-info .kicker{
+ font-size:23px!important;line-height:1.35!important;letter-spacing:1.6px!important;
+}
+body .cv-content-experience .cv-package-info .cv-content-lead{
+ font-family:'Cormorant Garamond',Georgia,serif!important;
+ font-size:clamp(34px,3.1vw,44px)!important;line-height:1.2!important;
+}
+body .cv-content-experience .cv-package-info .cv-package-intro{
+ font-family:'DM Sans',sans-serif!important;
+ font-size:clamp(23px,1.7vw,27px)!important;line-height:1.5!important;margin-bottom:26px!important;
+}
+body .cv-content-experience .cv-package-info h2{
+ font-size:clamp(42px,3vw,54px)!important;margin:23px 0 15px!important;line-height:1.1!important;
+}
+body .cv-content-experience .cv-package-info ul{
+ font-family:'DM Sans',sans-serif!important;
+ font-size:clamp(23px,1.55vw,26px)!important;line-height:1.5!important;
+ padding-left:30px!important;margin:0!important;
+}
+body .cv-content-experience .cv-package-info li{
+ font-size:inherit!important;line-height:inherit!important;margin-bottom:9px!important;
+}
+body .cv-content-experience .cv-compact-sessions,
+body .cv-content-experience .cv-simple-process{margin-top:42px!important;padding:20px 0!important}
+body .cv-content-experience .cv-compact-sessions h2,
+body .cv-content-experience .cv-simple-process h2{
+ font:500 clamp(44px,3.8vw,58px)/1.1 'Cormorant Garamond',Georgia,serif!important;
+ margin:0 0 22px!important;text-transform:none!important;
+}
+body .cv-content-experience .cv-session-rows{display:flex!important;flex-direction:column!important;gap:0!important}
+body .cv-content-experience .cv-session-row{
+ display:grid!important;grid-template-columns:minmax(160px,1.2fr) minmax(170px,.9fr) auto!important;
+ align-items:center!important;gap:24px!important;min-height:104px!important;
+ padding:19px 0!important;border-bottom:1px solid #d8d0ca!important;
+ background:transparent!important;
+}
+body .cv-content-experience .cv-session-row strong{
+ font:700 clamp(25px,2vw,30px)/1.25 'DM Sans',sans-serif!important;
+}
+body .cv-content-experience .cv-session-row .cv-session-price{
+ font:600 clamp(27px,2.2vw,33px)/1.25 'DM Sans',sans-serif!important;
+}
+body .cv-content-experience .cv-session-row .btn{
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ font:700 22px/1.25 'DM Sans',sans-serif!important;letter-spacing:.2px!important;
+ min-width:240px!important;min-height:68px!important;
+ padding:18px 24px!important;margin:0!important;white-space:nowrap!important;
+ text-align:center!important;
+}
+body .cv-content-experience .cv-session-note{
+ font:400 clamp(22px,1.6vw,25px)/1.5 'DM Sans',sans-serif!important;margin:22px 0 0!important;
+}
+body .cv-content-experience .cv-simple-process{
+ background:transparent!important;border-top:0!important;border-bottom:0!important;
+}
+body .cv-content-experience .cv-simple-process ol{
+ list-style:decimal!important;list-style-position:outside!important;
+ margin:0 0 0 32px!important;padding:0!important;
+}
+body .cv-content-experience .cv-simple-process li{
+ display:list-item!important;font:400 clamp(23px,1.6vw,26px)/1.55 'DM Sans',sans-serif!important;
+ margin:0 0 12px!important;padding:0 0 0 4px!important;
+}
+body .cv-content-experience .cv-simple-process li strong{font-weight:700!important}
+body .cv-content-experience .cv-content-extra .kicker{font-size:23px!important}
+body .cv-content-experience .cv-content-extra p:not(.kicker){
+ font:400 clamp(23px,1.7vw,27px)/1.45 'DM Sans',sans-serif!important;
+}
+body .cv-content-experience .cv-content-closing p{
+ font:400 clamp(21px,1.5vw,24px)/1.5 'DM Sans',sans-serif!important;
+}
+body .cv-content-experience .cv-content-closing .btn{font-size:23px!important;padding:21px 30px!important}
+@media(max-width:850px){
+ body .cv-content-experience .cv-session-row{grid-template-columns:minmax(0,1fr) auto!important;gap:12px!important}
+ body .cv-content-experience .cv-session-row .btn{grid-column:1/-1!important;min-width:0!important;width:100%!important}
 }
 @media(max-width:520px){
- .cv-content-experience .cv-session-row{grid-template-columns:1fr auto!important;padding:16px 0!important}
- .cv-content-experience .cv-session-row .cv-session-description{grid-column:1 / -1!important;grid-row:auto!important}
- .cv-content-experience .cv-session-row .btn{grid-column:1 / -1!important;grid-row:auto!important;width:100%!important}
+ body .cv-content-experience .cv-package-info .kicker{font-size:20px!important}
+ body .cv-content-experience .cv-package-info .cv-package-intro,
+ body .cv-content-experience .cv-package-info ul{font-size:22px!important}
+ body .cv-content-experience .cv-session-row strong{font-size:24px!important}
+ body .cv-content-experience .cv-session-row .cv-session-price{font-size:26px!important}
+ body .cv-content-experience .cv-session-row .btn{font-size:21px!important}
 }
 </style></head>
 <body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a href="index.html#home" class="brand" aria-label="Creative Vistas home"><img class="brand-logo" src="logo-white.png" alt="Creative Vistas" width="460" height="176"></a><nav class="primary-nav" id="nav" aria-label="Main navigation"><a href="index.html#home">Home</a><div class="cv-shop-menu"><a href="index.html#shop" class="cv-shop-main">Shop</a><button type="button" class="cv-shop-toggle" aria-label="Show Shop packages" aria-expanded="false" aria-controls="cvShopDropdown">▾</button><div class="cv-shop-dropdown" id="cvShopDropdown"><a href="index.html#shop">All Packages</a><a href="the-content-experience.html">The Content Experience</a><a href="realtor-listing-bundle.html">Realtor Listing Bundle</a><a href="30-day-content-planner.html">30-Day Content Planner</a><a href="marketing-courses-resources.html">Marketing Courses &amp; Resources</a></div></div><a href="index.html#training">Training</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></nav><div class="header-actions"><button class="icon-button menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div></div></header>
@@ -53,9 +117,9 @@
   <section class="cv-content-pricing cv-compact-sessions" id="sessions" aria-labelledby="cv-session-heading">
  <h2 id="cv-session-heading">Choose your experience</h2>
  <div class="cv-session-rows">
-  <div class="cv-session-row"><strong>30 Minutes</strong><span class="cv-session-price">$80</span><span class="cv-session-description">Quick content session</span><a class="btn btn-dark" href="contact.html">BOOK SESSION ↗</a></div>
-  <div class="cv-session-row"><strong>1 Hour</strong><span class="cv-session-price">$150</span><span class="cv-session-description">More time, more content</span><a class="btn btn-dark" href="contact.html">BOOK SESSION ↗</a></div>
-  <div class="cv-session-row"><strong>More Time</strong><span class="cv-session-price">Custom Quote</span><span class="cv-session-description">For longer sessions or events</span><a class="btn btn-dark" href="contact.html">GET A QUOTE ↗</a></div>
+  <div class="cv-session-row"><strong>30 Minutes</strong><span class="cv-session-price">$80</span><a class="btn btn-dark" href="contact.html">BOOK SESSION ↗</a></div>
+  <div class="cv-session-row"><strong>1 Hour</strong><span class="cv-session-price">$150</span><a class="btn btn-dark" href="contact.html">BOOK SESSION ↗</a></div>
+  <div class="cv-session-row"><strong>More Time</strong><span class="cv-session-price">Custom Quote</span><a class="btn btn-dark" href="contact.html">GET A QUOTE ↗</a></div>
  </div>
  <p class="cv-session-note">All sessions include smartphone photo and video capture with AirDrop delivery afterward. Editing/posting available for an additional $40.</p>
 </section>
