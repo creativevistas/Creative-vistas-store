@@ -1,35 +1,40 @@
-/* Creative Vistas rotating reviews area — genuine feedback only. */
+/* Creative Vistas rotating client reviews: genuine customer feedback only. */
 .cv-reviews{background:#fff;color:#191716;border-top:1px solid #ded6cf;padding:clamp(60px,6.5vw,108px) 22px;text-align:center}
 .cv-reviews-inner{max-width:1080px;margin:0 auto}
 .cv-reviews-eyebrow{font:600 19px/1.4 'DM Sans',sans-serif!important;letter-spacing:2px;color:#69625c;margin:0 0 14px!important}
 .cv-reviews h2{font:400 clamp(48px,5vw,78px)/1.03 'Cormorant Garamond',Georgia,serif!important;margin:0 0 26px!important}
-.cv-review-fader{position:relative;max-width:950px;min-height:155px;margin:0 auto}
-.cv-review-slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;opacity:0;animation:cv-reviews-fade 12s linear infinite;pointer-events:none}
+.cv-review-fader{position:relative;max-width:1000px;min-height:290px;margin:0 auto}
+.cv-review-slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:15px;opacity:0;animation:cv-reviews-fade 21s linear infinite;pointer-events:none}
 .cv-review-slide:nth-child(1){animation-delay:0s}
-.cv-review-slide:nth-child(2){animation-delay:6s}
-
-.cv-review-slide p{font:italic 500 clamp(30px,3vw,43px)/1.18 'Cormorant Garamond',Georgia,serif!important;margin:0!important}
+.cv-review-slide:nth-child(2){animation-delay:7s}
+.cv-review-slide:nth-child(3){animation-delay:14s}
+.cv-review-slide p{font:italic 500 clamp(28px,2.8vw,40px)/1.2 'Cormorant Garamond',Georgia,serif!important;margin:0!important}
 .cv-review-slide span{font:400 clamp(18px,1.6vw,23px)/1.4 'DM Sans',sans-serif!important;color:#615850}
+.cv-review-stars{font:600 25px/1 'DM Sans',sans-serif;letter-spacing:5px;color:#3f3832}
 @keyframes cv-reviews-fade{
  0%{opacity:0}
- 7%{opacity:1}
- 43%{opacity:1}
- 50%,100%{opacity:0}
+ 5%{opacity:1}
+ 28%{opacity:1}
+ 33.333%,100%{opacity:0}
 }
-.cv-review-dots{display:flex;gap:12px;justify-content:center;align-items:center;margin-top:15px}
-.cv-review-dots i{height:7px;width:7px;background:#b9afa6;border-radius:50%;display:block;animation:cv-review-dot 12s linear infinite}
+.cv-review-dots{display:flex;gap:12px;justify-content:center;align-items:center;margin-top:12px}
+.cv-review-dots i{height:7px;width:7px;background:#b9afa6;border-radius:50%;display:block;animation:cv-review-dot 21s linear infinite}
 .cv-review-dots i:nth-child(1){animation-delay:0s}
-.cv-review-dots i:nth-child(2){animation-delay:6s}
-
-@keyframes cv-review-dot{0%,43%{background:#1c1917;transform:scale(1.25)}50%,100%{background:#b9afa6;transform:scale(1)} }33.333%,100%{background:#b9afa6;transform:scale(1)}}
-@media(max-width:600px){.cv-reviews{padding:60px 20px 70px}.cv-review-fader{min-height:185px}.cv-reviews-eyebrow{font-size:17px!important}}
+.cv-review-dots i:nth-child(2){animation-delay:7s}
+.cv-review-dots i:nth-child(3){animation-delay:14s}
+@keyframes cv-review-dot{
+ 0%,28%{background:#1c1917;transform:scale(1.25)}
+ 33.333%,100%{background:#b9afa6;transform:scale(1)}
+}
+@media(max-width:600px){
+ .cv-reviews{padding:60px 20px 70px}
+ .cv-review-fader{min-height:360px}
+ .cv-reviews-eyebrow{font-size:17px!important}
+}
 @media(prefers-reduced-motion:reduce){
  .cv-review-slide{animation:none!important;opacity:0}
  .cv-review-slide:first-child{opacity:1}
  .cv-review-dots i{animation:none!important}
 }
-
-/* White shop background to match reviews while preserving product cards. */
-body section.products#shop{background:#fff !important;}
-
-.cv-review-stars{font:600 25px/1 'DM Sans',sans-serif;letter-spacing:5px;color:#3f3832;}
+/* Keep the Shop Our Packages section white. */
+body section.products#shop{background:#fff!important}
