@@ -41,15 +41,18 @@ body section.products#shop{background:#fff!important}
 
 /* Single, larger testimonial section title (replaces the former two headings). */
 body .cv-reviews h2.cv-reviews-eyebrow{
- font-family:'DM Sans',sans-serif!important;
- font-size:clamp(27px,3.1vw,42px)!important;
- font-weight:700!important;
+ font-family:var(--sans,'DM Sans',sans-serif)!important;
+ font-size:23px!important;
+ font-weight:600!important;
  line-height:1.25!important;
- letter-spacing:1.4px!important;
+ letter-spacing:2px!important;
  color:#191716!important;
  max-width:1050px!important;
- margin:0 auto 30px!important;
+ margin:0 auto 22px!important;
 }
-@media(max-width:600px){
- body .cv-reviews h2.cv-reviews-eyebrow{font-size:26px!important;letter-spacing:.6px!important}
+@media(max-width:1300px){
+ body .cv-reviews h2.cv-reviews-eyebrow{font-size:21px!important}
+}
+@media(max-width:700px){
+ body .cv-reviews h2.cv-reviews-eyebrow{font-size:20px!important;letter-spacing:2px!important;margin-bottom:15px!important}
 }
