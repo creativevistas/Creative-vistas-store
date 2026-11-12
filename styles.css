@@ -414,3 +414,22 @@ body{font-size:18px}
 
 /* Recognizable white Facebook mark in social links */
 .social-links .facebook-letter{display:block;color:currentColor;font-family:Arial,Helvetica,sans-serif;font-size:37px;font-weight:700;line-height:1;transform:translateY(4px);text-transform:lowercase}
+
+
+/* Navigation: all menu tiles match at rest; light highlight only on interaction. */
+.primary-nav a,
+.primary-nav a.active,
+.primary-nav a:visited,
+.primary-nav a.active:visited {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,.5);
+}
+.primary-nav a:hover,
+.primary-nav a.active:hover,
+.primary-nav a:focus-visible,
+.primary-nav a.active:focus-visible {
+  background: #f5f1ed;
+  color: #111;
+  border-color: #f5f1ed;
+}
