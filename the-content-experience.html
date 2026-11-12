@@ -1,5 +1,32 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#141313"><meta name="description" content="The Content Experience by Creative Vistas: authentic smartphone content creation. 30 minutes $90, 1 hour $150, longer sessions by quote. Photos and videos AirDropped after your session."><title>The Content Experience | Creative Vistas</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=readable-cover-logo-20261112c"><link rel="stylesheet" href="header-layout.css?v=package-nav-20261112"><link rel="stylesheet" href="shop-pages.css?v=content-experience-pricing-20261112"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#141313"><meta name="description" content="The Content Experience by Creative Vistas: authentic smartphone content creation. 30 minutes $90, 1 hour $150, longer sessions by quote. Photos and videos AirDropped after your session."><title>The Content Experience | Creative Vistas</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=readable-cover-logo-20261112c"><link rel="stylesheet" href="header-layout.css?v=package-nav-20261112"><link rel="stylesheet" href="shop-pages.css?v=content-experience-pricing-20261112"><style>
+/* Content Experience compact areas — local rules deliberately override legacy CSS. */
+.cv-content-experience .cv-compact-sessions,
+.cv-content-experience .cv-simple-process{margin-top:36px!important;padding:24px 0!important}
+.cv-content-experience .cv-compact-sessions h2,
+.cv-content-experience .cv-simple-process h2{font-family:'Cormorant Garamond',Georgia,serif!important;font-weight:500!important;font-size:clamp(32px,3vw,44px)!important;line-height:1.1!important;margin:0 0 16px!important;text-transform:none!important}
+.cv-content-experience .cv-session-rows{display:flex!important;flex-direction:column!important;gap:0!important}
+.cv-content-experience .cv-session-row{display:grid!important;grid-template-columns:minmax(110px,1fr) minmax(120px,.8fr) minmax(180px,1.7fr) auto!important;align-items:center!important;gap:16px!important;min-height:76px!important;padding:11px 0!important;border-bottom:1px solid #d8d0ca!important;background:transparent!important}
+.cv-content-experience .cv-session-row strong{font:700 20px/1.35 'DM Sans',sans-serif!important}
+.cv-content-experience .cv-session-row .cv-session-price{font:600 24px/1.25 'DM Sans',sans-serif!important}
+.cv-content-experience .cv-session-row .cv-session-description{font:400 17px/1.35 'DM Sans',sans-serif!important}
+.cv-content-experience .cv-session-row .btn{font:700 16px/1.25 'DM Sans',sans-serif!important;letter-spacing:.3px!important;min-height:45px!important;min-width:155px!important;padding:12px 15px!important;margin:0!important;text-align:center!important;white-space:nowrap!important}
+.cv-content-experience .cv-session-note{font:400 16px/1.5 'DM Sans',sans-serif!important;margin:16px 0 0!important}
+.cv-content-experience .cv-simple-process{background:transparent!important;border-top:0!important;border-bottom:0!important}
+.cv-content-experience .cv-simple-process ol{list-style:decimal!important;list-style-position:outside!important;margin:0 0 0 24px!important;padding:0!important}
+.cv-content-experience .cv-simple-process li{display:list-item!important;font:400 17px/1.5 'DM Sans',sans-serif!important;margin:0 0 8px!important;padding:0 0 0 3px!important}
+.cv-content-experience .cv-simple-process li strong{font-weight:700!important}
+@media(max-width:900px){
+ .cv-content-experience .cv-session-row{grid-template-columns:1fr auto!important;gap:6px 15px!important}
+ .cv-content-experience .cv-session-row .cv-session-description{grid-column:1!important;grid-row:2!important}
+ .cv-content-experience .cv-session-row .btn{grid-column:2!important;grid-row:1 / 3!important}
+}
+@media(max-width:520px){
+ .cv-content-experience .cv-session-row{grid-template-columns:1fr auto!important;padding:16px 0!important}
+ .cv-content-experience .cv-session-row .cv-session-description{grid-column:1 / -1!important;grid-row:auto!important}
+ .cv-content-experience .cv-session-row .btn{grid-column:1 / -1!important;grid-row:auto!important;width:100%!important}
+}
+</style></head>
 <body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a href="index.html#home" class="brand" aria-label="Creative Vistas home"><img class="brand-logo" src="logo-white.png" alt="Creative Vistas" width="460" height="176"></a><nav class="primary-nav" id="nav" aria-label="Main navigation"><a href="index.html#home">Home</a><div class="cv-shop-menu"><a href="index.html#shop" class="cv-shop-main">Shop</a><button type="button" class="cv-shop-toggle" aria-label="Show Shop packages" aria-expanded="false" aria-controls="cvShopDropdown">▾</button><div class="cv-shop-dropdown" id="cvShopDropdown"><a href="index.html#shop">All Packages</a><a href="the-content-experience.html">The Content Experience</a><a href="realtor-listing-bundle.html">Realtor Listing Bundle</a><a href="30-day-content-planner.html">30-Day Content Planner</a><a href="marketing-courses-resources.html">Marketing Courses &amp; Resources</a></div></div><a href="index.html#training">Training</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></nav><div class="header-actions"><button class="icon-button menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div></div></header>
 <main id="main" class="cv-package-page cv-content-experience">
   <a class="cv-package-back" href="index.html#shop">← Back to all packages</a>
@@ -23,41 +50,24 @@
       </ul>
     </div>
   </div>
-  <section class="cv-content-pricing" id="sessions" aria-labelledby="cv-session-heading">
-    <p class="kicker">CHOOSE YOUR EXPERIENCE</p>
-    <h2 id="cv-session-heading">Simple sessions. Your story, your way.</h2>
-    <div class="cv-content-pricing-grid">
-      <article class="cv-content-rate">
-        <p class="cv-content-duration">30 MINUTES</p>
-        <p class="cv-content-amount">$90</p>
-        <p>Focused content capture for a quick refresh, a specific moment, or a few social-media ideas.</p>
-        <a href="contact.html" class="btn btn-dark">REQUEST 30 MINUTES ↗</a>
-      </article>
-      <article class="cv-content-rate">
-        <p class="cv-content-duration">1 HOUR</p>
-        <p class="cv-content-amount">$150</p>
-        <p>More time for variety—behind-the-scenes, interviews, multiple angles, photos and video clips.</p>
-        <a href="contact.html" class="btn btn-dark">REQUEST 1 HOUR ↗</a>
-      </article>
-      <article class="cv-content-rate">
-        <p class="cv-content-duration">EXTENDED SESSION</p>
-        <p class="cv-content-amount cv-content-custom">Custom quote</p>
-        <p>Need more time for an event, multiple locations, or an extended content session? Tell me what you're planning.</p>
-        <a href="contact.html" class="btn btn-dark">REQUEST A QUOTE ↗</a>
-      </article>
-    </div>
-    <p class="cv-content-pricing-note">Session prices include on-location smartphone content capture and delivery of captured photos and videos. Editing and publishing are separate.</p>
-  </section>
-  <section class="cv-content-process" aria-labelledby="cv-process-heading">
-    <p class="kicker">HOW IT WORKS</p>
-    <h2 id="cv-process-heading">Show up. Be yourself. I'll capture the rest.</h2>
-    <div class="cv-content-steps">
-      <div><span>01</span><h3>Choose your session</h3><p>Select 30 minutes, 1 hour, or request a custom quote. We'll confirm the location, timing, and the content you want captured.</p></div>
-      <div><span>02</span><h3>Let's create</h3><p>I'll capture candid photos and video, natural B-roll, and the details that tell your story—using a smartphone for an authentic, social-first feel.</p></div>
-      <div><span>03</span><h3>AirDrop &amp; go</h3><p>At the end of our session, I'll AirDrop your captured photos and videos directly to your compatible Apple device so you can use them your way.</p></div>
-    </div>
-  </section>
-  <section class="cv-content-extra" aria-labelledby="cv-extra-heading">
+  <section class="cv-content-pricing cv-compact-sessions" id="sessions" aria-labelledby="cv-session-heading">
+ <h2 id="cv-session-heading">Choose your experience</h2>
+ <div class="cv-session-rows">
+  <div class="cv-session-row"><strong>30 Minutes</strong><span class="cv-session-price">$90</span><span class="cv-session-description">Quick content session</span><a class="btn btn-dark" href="contact.html">BOOK SESSION ↗</a></div>
+  <div class="cv-session-row"><strong>1 Hour</strong><span class="cv-session-price">$150</span><span class="cv-session-description">More time, more content</span><a class="btn btn-dark" href="contact.html">BOOK SESSION ↗</a></div>
+  <div class="cv-session-row"><strong>More Time</strong><span class="cv-session-price">Custom Quote</span><span class="cv-session-description">For longer sessions or events</span><a class="btn btn-dark" href="contact.html">GET A QUOTE ↗</a></div>
+ </div>
+ <p class="cv-session-note">All sessions include smartphone photo and video capture with AirDrop delivery afterward. Editing/posting available for an additional $50.</p>
+</section>
+<section class="cv-content-process cv-simple-process" aria-labelledby="cv-process-heading">
+ <h2 id="cv-process-heading">How it works</h2>
+ <ol>
+  <li><strong>Book:</strong> Choose your session and confirm the location and content goals.</li>
+  <li><strong>Create:</strong> I'll capture your photos and videos naturally, using a smartphone.</li>
+  <li><strong>Receive:</strong> AirDrop your photos and videos at the end of our session.</li>
+ </ol>
+</section>
+<section class="cv-content-extra" aria-labelledby="cv-extra-heading">
     <div>
       <p class="kicker">OPTIONAL ADD-ON</p>
       <h2 id="cv-extra-heading">Want me to take it a step further?</h2>
