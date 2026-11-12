@@ -437,3 +437,11 @@ body{font-size:18px}
 /* Uniform package-image frames across all screen sizes. */
 .products .product-image-button{display:block;width:100%;height:auto;aspect-ratio:4 / 3 !important;overflow:hidden;flex-shrink:0}
 .products .product-image-button img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+
+/* Three distinct collections: generous desktop cards, stacked mobile cards. */
+.products .product-grid{grid-template-columns:repeat(3,minmax(0,1fr)) !important;max-width:1400px;gap:24px;margin-inline:auto}
+.products .product-image-button{aspect-ratio:4/3 !important;overflow:hidden}
+.products .product-image-button img{width:100%;height:100%;object-fit:cover;object-position:center}
+.products .product-info h3{line-height:1.1}
+@media(max-width:850px){.products .product-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:16px}}
+@media(max-width:600px){.products .product-grid{grid-template-columns:minmax(0,1fr) !important;gap:24px}}
