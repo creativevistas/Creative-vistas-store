@@ -1,5 +1,5 @@
 /* Creative Vistas rotating reviews area — genuine feedback only. */
-.cv-reviews{background:#f8f5f1;color:#191716;border-top:1px solid #ded6cf;padding:clamp(60px,6.5vw,108px) 22px;text-align:center}
+.cv-reviews{background:#fff;color:#191716;border-top:1px solid #ded6cf;padding:clamp(60px,6.5vw,108px) 22px;text-align:center}
 .cv-reviews-inner{max-width:1080px;margin:0 auto}
 .cv-reviews-eyebrow{font:600 19px/1.4 'DM Sans',sans-serif!important;letter-spacing:2px;color:#69625c;margin:0 0 14px!important}
 .cv-reviews h2{font:400 clamp(48px,5vw,78px)/1.03 'Cormorant Garamond',Georgia,serif!important;margin:0 0 26px!important}
