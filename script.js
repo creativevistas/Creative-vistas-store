@@ -23,4 +23,4 @@ document.addEventListener('click',e=>{const addBtn=e.target.closest('[data-add]'
 $$('.filter').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
 $('.cart-open').addEventListener('click',()=>modalOpen('cart'));$('.search-open').addEventListener('click',()=>modalOpen('search'));$('.close-cart').addEventListener('click',modalClose);$('.close-search').addEventListener('click',modalClose);$('.close-product').addEventListener('click',modalClose);$('#overlay').addEventListener('click',modalClose);$('#searchField').addEventListener('input',renderSearch);document.addEventListener('keydown',e=>{if(e.key==='Escape')modalClose()});
 const menu=$('.menu-button');menu.addEventListener('click',()=>{const open=$('#nav').classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});$$('#nav a').forEach(a=>a.addEventListener('click',()=>{$('#nav').classList.remove('open');menu.setAttribute('aria-expanded','false')}));
-$('#year').textContent=new Date().getFullYear();renderProducts();renderCart();
+const yearElement=$('#year');if(yearElement)yearElement.textContent=new Date().getFullYear();renderProducts();renderCart();
