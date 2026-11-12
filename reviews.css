@@ -28,3 +28,6 @@
  .cv-review-slide:first-child{opacity:1}
  .cv-review-dots i{animation:none!important}
 }
+
+/* White shop background to match reviews while preserving product cards. */
+body section.products#shop{background:#fff !important;}
