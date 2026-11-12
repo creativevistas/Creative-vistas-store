@@ -1,0 +1,57 @@
+/* Creative Vistas shop navigation and package pages, loaded last. */
+.site-header .primary-nav .cv-shop-menu{position:relative;display:flex;align-items:center;gap:2px;flex:0 0 auto;min-width:0}
+.site-header .primary-nav .cv-shop-menu > a.cv-shop-main{border-radius:2px 0 0 2px !important}
+.site-header .primary-nav .cv-shop-toggle{
+ font:600 24px/1 'Cormorant Garamond',Georgia,serif;display:grid;place-items:center;
+ width:32px;height:55px;flex:none;border:1px solid rgba(255,255,255,.58);
+ border-radius:0 2px 2px 0;background:transparent;color:#fff;cursor:pointer;
+}
+.site-header .primary-nav .cv-shop-dropdown{
+ display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:330px;
+ z-index:80;background:#111;color:#fff;border:1px solid #514d49;box-shadow:0 18px 40px #0007;
+ padding:9px;flex-direction:column;gap:3px;
+}
+.site-header .primary-nav .cv-shop-menu:hover .cv-shop-dropdown,
+.site-header .primary-nav .cv-shop-menu:focus-within .cv-shop-dropdown,
+.site-header .primary-nav .cv-shop-menu.is-open .cv-shop-dropdown{display:flex}
+.site-header .primary-nav .cv-shop-dropdown a{
+ display:block !important;white-space:normal !important;min-height:0 !important;
+ font:500 21px/1.2 'Cormorant Garamond',Georgia,serif !important;font-style:normal !important;
+ padding:12px 15px !important;border:0 !important;text-align:left !important;
+}
+.site-header .primary-nav .cv-shop-dropdown a:hover,
+.site-header .primary-nav .cv-shop-dropdown a:focus-visible{
+ background:#f5f1ed !important;color:#111 !important;
+}
+@media(max-width:1180px){
+ .site-header .primary-nav .cv-shop-menu{display:grid;grid-template-columns:minmax(0,1fr) 52px;gap:8px;width:100%}
+ .site-header .primary-nav .cv-shop-menu > a.cv-shop-main{width:100%}
+ .site-header .primary-nav .cv-shop-toggle{height:58px;width:52px;font-size:28px}
+ .site-header .primary-nav .cv-shop-dropdown{
+  display:none;position:static;grid-column:1/-1;min-width:0;width:100%;
+  box-shadow:none;margin-top:0;padding:8px;
+ }
+ .site-header .primary-nav .cv-shop-menu:hover:not(.is-open) .cv-shop-dropdown{display:none}
+ .site-header .primary-nav .cv-shop-menu:focus-within:not(.is-open) .cv-shop-dropdown{display:none}
+ .site-header .primary-nav .cv-shop-menu.is-open .cv-shop-dropdown{display:flex}
+ .site-header .primary-nav .cv-shop-dropdown a{font-size:22px !important}
+}
+.cv-package-page{width:100%;max-width:1400px;margin:0 auto;padding:40px clamp(18px,4vw,65px) 90px}
+.cv-package-page .cv-package-back{font-size:18px !important}
+.cv-package-page .cv-package-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,4vw,65px)}
+.cv-package-page .cv-package-info h1{font-size:clamp(48px,5vw,80px)}
+.cv-package-page .cv-package-info .kicker{font-size:18px !important}
+.cv-package-page .cv-package-intro,.cv-package-page .cv-package-note,
+.cv-package-page .cv-package-subnote,.cv-package-page .cv-package-info ul{font-size:20px !important;line-height:1.45 !important}
+.cv-package-page .cv-package-info h2{font-size:42px}
+.cv-package-page .cv-package-price{font-size:28px}
+.cv-package-page .cv-package-cta{display:inline-flex !important;justify-content:center;align-items:center;
+ font-size:19px !important;min-height:62px;padding:17px 28px !important}
+.cv-package-page .cv-payment-disabled{border:0;opacity:.74;cursor:not-allowed}
+@media(max-width:760px){
+ .cv-package-page{padding:25px 18px 65px}
+ .cv-package-page .cv-package-layout{grid-template-columns:minmax(0,1fr)}
+ .cv-package-page .cv-package-info h1{font-size:clamp(45px,9vw,68px)}
+ .cv-package-page .cv-package-intro,.cv-package-page .cv-package-note,
+ .cv-package-page .cv-package-subnote,.cv-package-page .cv-package-info ul{font-size:19px !important}
+}
