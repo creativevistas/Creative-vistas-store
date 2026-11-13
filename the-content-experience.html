@@ -158,4 +158,32 @@ body .cv-content-experience .cv-content-closing .btn{font-size:23px!important;pa
       <a class="btn btn-dark" href="contact.html?session=Custom%20Content%20Quote">GET A CUSTOM QUOTE ↗</a>
     </div>
   </section>
-  </main><script>(function(){const form=document.getElementById('cvExperienceBooking');if(!form)return;const total=document.getElementById('cvBookingTotal');function update(){const selected=form.querySelector('input[name="session"]:checked');const addon=form.querySelector('input[name="addon"]');total.textContent=' class="social-footer"><p>CREATIVE VISTAS</p><a href="index.html#shop">EXPLORE MORE PACKAGES</a></footer><script>const b=document.querySelector('.menu-button'),n=document.querySelector('#nav');b?.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});n?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));</script><script src="shop-navigation.js?v=20261112" defer></script></body></html>+(Number(selected?.dataset.price||0)+(addon.checked?35:0));}form.addEventListener('change',update);update();})();</script><footer class="social-footer"><p>CREATIVE VISTAS</p><a href="index.html#shop">EXPLORE MORE PACKAGES</a></footer><script>const b=document.querySelector('.menu-button'),n=document.querySelector('#nav');b?.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});n?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));</script><script src="shop-navigation.js?v=20261112" defer></script></body></html>
+  </main>
+<footer class="social-footer"><p>CREATIVE VISTAS</p><a href="index.html#shop">EXPLORE MORE PACKAGES</a></footer>
+<script>
+(function(){
+  const form=document.getElementById('cvExperienceBooking');
+  const total=document.getElementById('cvBookingTotal');
+  if(form && total){
+    function update(){
+      const selected=form.querySelector('input[name="session"]:checked');
+      const addon=form.querySelector('input[name="addon"]');
+      const amount=Number(selected?.dataset.price||0)+(addon?.checked?35:0);
+      total.textContent=String.fromCharCode(36)+amount;
+    }
+    form.addEventListener('change',update);
+    update();
+  }
+  const b=document.querySelector('.menu-button'),n=document.querySelector('#nav');
+  b?.addEventListener('click',()=>{
+    const open=n.classList.toggle('open');
+    b.setAttribute('aria-expanded',String(open));
+  });
+  n?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    n.classList.remove('open');
+    b?.setAttribute('aria-expanded','false');
+  }));
+})();
+</script>
+<script src="shop-navigation.js?v=20261112" defer></script>
+</body></html>
