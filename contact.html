@@ -46,4 +46,22 @@
 <a href="https://www.instagram.com/creativevistas/" target="_blank" rel="noopener noreferrer" aria-label="Creative Vistas Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.6" cy="6.6" r="1" class="social-fill"/></svg></a>
 <a href="https://www.tiktok.com/@creativevistas" target="_blank" rel="noopener noreferrer" aria-label="Creative Vistas TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" class="tiktok-icon"><path d="M14.1 2.5h3.15c.2 2.18 1.7 3.9 4 4.14v3.1a10.1 10.1 0 0 1-4.01-1.1v7.01a6.5 6.5 0 1 1-6.55-6.55c.42 0 .84.04 1.24.12v3.28a3.34 3.34 0 1 0 2.18 3.15V2.5Z"/></svg></a>
 <a href="https://www.facebook.com/creativevistas" target="_blank" rel="noopener noreferrer" aria-label="Creative Vistas Facebook" title="Facebook"><span class="facebook-letter" aria-hidden="true">f</span></a>
-</div></footer><script>const btn=document.querySelector('.menu-button'),nav=document.querySelector('#nav');btn?.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}));</script><script src="shop-navigation.js?v=20261112" defer></script></body></html>
+</div></footer><script>const btn=document.querySelector('.menu-button'),nav=document.querySelector('#nav');btn?.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}));</script><script>(function(){
+const params=new URLSearchParams(window.location.search);
+const session=params.get('session');
+if(!session||!['30 Minutes','1 Hour','Custom Content Quote'].includes(session))return;
+const form=document.querySelector('.cv-discovery-form');if(!form)return;
+const addon=params.get('addon')==='Editing and/or posting support';
+const base=session==='30 Minutes'?80:session==='1 Hour'?125:null;
+const total=base===null?'Custom quote':'</body></html>+(base+(addon?35:0));
+const description=session==='Custom Content Quote'?'Custom content coverage — quote requested':session+' content creation session'+(addon?' + editing/posting support':'');
+const summary=document.createElement('div');
+summary.className='cv-field cv-booking-request-summary';
+summary.innerHTML='<label for="cvPackageRequest">Your selected package</label><input id="cvPackageRequest" name="Requested package and estimate" readonly>';
+const field=summary.querySelector('input');field.value=description+' — '+total;
+const intro=form.querySelector('.cv-form-lead');intro?.insertAdjacentElement('afterend',summary);
+const service=form.querySelector('input[name="Service: Content creation"]');if(service)service.checked=true;
+const goal=form.querySelector('#cvGoal');
+if(goal){goal.placeholder=session==='Custom Content Quote'?'Describe your event, class, workshop or project, preferred date, location, hours and content needs.':'Share your preferred date, location, business, and what you want captured during your session.';}
+const subject=form.querySelector('input[name="_subject"]');if(subject)subject.value='Creative Vistas — '+description;
+})();</script><script src="shop-navigation.js?v=20261112" defer></script></body></html>
